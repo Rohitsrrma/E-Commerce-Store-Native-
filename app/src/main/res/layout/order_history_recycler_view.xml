@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:background="@drawable/ripple"
+    android:hapticFeedbackEnabled="true"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/purchase_Code_Text_View_Recycler_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="BO1PyURR6"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"/>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/order_histroy_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="01 Mar 2023"
+
+            android:textColor="@color/textColor"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/order_histroy_date_total_Price"
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="44 USD"
+        android:textSize="15sp"/>
+
+
+</LinearLayout>
+    <View
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="@color/BottomLineColor"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

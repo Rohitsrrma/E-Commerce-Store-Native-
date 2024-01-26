@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:padding="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Process Checkout"
+        android:textColor="@color/textColor"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:text="Do you want to checkout?"
+        android:textSize="18sp"
+        />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/no_button_Process_Checkout"
+            android:layout_width="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="50dp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:background="@drawable/ripple"
+            android:layout_gravity="start"
+            app:layout_constraintEnd_toStartOf="@+id/ok"
+            android:backgroundTint="@color/white"
+            android:text="No"
+            android:elevation="0dp"
+            android:textColor="@color/first_color" />
+
+        <Button
+            android:id="@+id/yes_button_Process_Checkout"
+            android:layout_width="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="50dp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:background="@drawable/ripple"
+            android:layout_gravity="start"
+            app:layout_constraintEnd_toStartOf="@+id/ok"
+            android:backgroundTint="@color/white"
+            android:text="Yes"
+            android:elevation="0dp"
+            android:textColor="@color/first_color"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
+
+

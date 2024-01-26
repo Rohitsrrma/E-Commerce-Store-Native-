@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activiity.CheckoutActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/first_color"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <ImageView
+            android:id="@+id/backUserCheckout"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_backbutton"
+            app:tint="#ffffff"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textViewOrderHistory"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Checkout"
+            android:textSize="20sp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/backUserCheckout"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        app:layout_constraintTop_toBottomOf="@+id/Toolbar"
+      app:layout_constraintBottom_toTopOf="@+id/process_checkout_Linear_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/filledTextFieldName"
+                android:layout_marginTop="10dp"
+                app:boxStrokeColor="@color/first_color"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:textColorHint="#A8000000"
+                android:layout_height="wrap_content"
+                android:hint="Your Name">
+
+                <!--this is the actual edit text which takes the input-->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/checkout_Name"
+                    android:textColor="@color/textColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/filledTextFieldEmail"
+                android:layout_marginTop="10dp"
+                app:boxStrokeColor="@color/first_color"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:focusedByDefault="true"
+                android:textColorHint="#A8000000"
+                android:layout_height="wrap_content"
+
+
+
+                android:hint="Your Email">
+
+                <!--this is the actual edit text which takes the input-->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/checkout_Email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/textColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/filledTextFieldPhone"
+                android:layout_marginTop="10dp"
+                app:boxStrokeColor="@color/first_color"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:focusedByDefault="true"
+                android:textColorHint="#A8000000"
+                android:layout_height="wrap_content"
+
+
+
+                android:hint="Phone Number">
+
+                <!--this is the actual edit text which takes the input-->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/checkout_Phone"
+                    android:inputType="phone"
+                    android:textColor="@color/textColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/filledTextFieldAddress"
+                android:layout_marginTop="10dp"
+                app:boxStrokeColor="@color/first_color"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:focusedByDefault="true"
+                android:textColorHint="#A8000000"
+                android:layout_height="wrap_content"
+                android:hint="Address">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/checkout_Address"
+                    android:inputType="textPostalAddress"
+                    android:textColor="@color/textColor"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/filledTextFieldShipping"
+                android:layout_marginTop="10dp"
+                app:boxBackgroundColor="@color/white"
+                app:hintTextColor="@color/textColor"
+                app:boxStrokeColor="@color/first_color"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:textColorHint="#A8000000"
+                android:layout_height="wrap_content"
+                android:hint="Shipping">
+
+                <!--this is the actual edit text which takes the input-->
+                <AutoCompleteTextView
+                    android:id="@+id/auto_complete_text"
+                    android:textColor="@color/textColor"
+                    android:layout_width="match_parent"
+                    android:popupBackground="@color/white"
+                    android:layout_height="match_parent"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/filledTextFieldOrderDetail"
+                android:layout_marginTop="10dp"
+                app:boxStrokeColor="@color/first_color"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:clickable="false"
+                android:textColorHint="#A8000000"
+                android:layout_height="wrap_content"
+
+
+
+                android:hint="Order Detail">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/checkout_Order_Detail"
+                        android:inputType="none"
+                        android:editable="false"
+                        android:textColor="@color/textColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/filledTextFieldComment"
+                android:layout_marginTop="10dp"
+                app:boxStrokeColor="@color/first_color"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:focusedByDefault="true"
+                android:textColorHint="#A8000000"
+                android:layout_height="wrap_content"
+                android:hint="Comment">
+                <!--this is the actual edit text which takes the input-->
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/checkout_Comment"
+                        android:inputType="none"
+                        android:textColor="@color/textColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/process_checkout_Linear_Layout"
+        android:background="@drawable/addtocartbutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="Process Checkout"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

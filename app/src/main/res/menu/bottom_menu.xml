@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/recent"
+        android:title="Recent"
+        android:icon="@drawable/reload2"
+       />
+
+    <item android:id="@+id/category"
+        android:icon="@drawable/list2"
+        android:title="Category"
+        />
+
+
+    <item android:id="@+id/help"
+        android:icon="@drawable/help_web_button"
+        android:title="Help"/>
+
+    <item android:id="@+id/profile"
+        android:icon="@drawable/profile"
+        android:title="Profile"/>
+
+</menu>

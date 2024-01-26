@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragmant.ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/yourNameConstraint"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:id="@+id/yournametextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Name"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/emailtextView"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/yournametextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="your.email@gmail.com"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/mobnoTV"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/textColor"
+                app:layout_constraintTop_toBottomOf="@id/emailtextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xxxxxxxxxx"
+
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <TextView
+                android:textColor="@color/textColor"
+                android:id="@+id/addressTV"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/mobnoTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Address"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/editTV"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:text="EDIT"
+                android:background="@drawable/textview_ripple"
+                android:textColor="@color/first_color"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:background="@drawable/selector"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+
+            android:layout_height="wrap_content"
+            android:id="@+id/orderhistoryLL">
+
+
+        <View
+            app:layout_constraintTop_toBottomOf="@+id/addressTV"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/BottomLineColor"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/orderHistoryIV"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/orderhistorynew"/>
+
+            <TextView
+                android:id="@+id/orderHistoryTV"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Order History"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@id/orderHistoryIV"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            app:layout_constraintTop_toBottomOf="@+id/addressTV"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/BottomLineColor"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@drawable/selector"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:id="@+id/rateusLL">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/rateUsIV"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ratingnew"/>
+
+            <TextView
+                android:id="@+id/rateUsTV"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Rate Us"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@id/rateUsIV"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            app:layout_constraintTop_toBottomOf="@+id/addressTV"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/BottomLineColor"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@drawable/selector"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:id="@+id/shareLL">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/shareIV"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/share"/>
+
+            <TextView
+                android:id="@+id/shareTV"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Share"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@id/shareIV"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View
+            app:layout_constraintTop_toBottomOf="@+id/addressTV"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/BottomLineColor"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/selector"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:id="@+id/privacyLL">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/privacyIV"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/privacy_policy"/>
+
+            <TextView
+                android:id="@+id/privacyTV"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Privacy"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@id/privacyIV"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            app:layout_constraintTop_toBottomOf="@+id/addressTV"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/BottomLineColor"/>
+
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</FrameLayout>

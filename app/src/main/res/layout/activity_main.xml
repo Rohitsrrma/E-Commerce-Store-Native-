@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Activiity.MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/first_color"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <ImageView
+            android:id="@+id/back_search_view"
+            android:tooltipText="Search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/invisiblecircle"
+            android:src="@drawable/ic_backbutton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+
+        <TextView
+            android:id="@+id/tbTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:paddingEnd="4dp"
+            android:lines="1"
+            android:text="E-Commerce Android App"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_view"
+            android:layout_width="0dp"
+
+            android:layout_marginLeft="10dp"
+            app:layout_constraintStart_toEndOf="@+id/back_search_view"
+            android:layout_height="wrap_content"
+            app:iconifiedByDefault="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/searchbutton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:searchIcon="@null"
+            app:queryBackground="@android:color/transparent"
+            app:closeIcon="@null" />
+
+
+        <ImageButton
+            android:id="@+id/closebutton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="20dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="TODO"
+            android:src="@drawable/ic_close"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/shoppingcartMainAct"
+
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="DuplicateClickableBoundsCheck" />
+
+
+        <ImageButton
+            android:id="@+id/searchbutton"
+
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="20dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="TODO"
+            android:padding="6dp"
+            android:src="@drawable/ic_search"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/shoppingcartMainAct"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
+
+
+        <LinearLayout
+            android:id="@+id/shoppingcartMainAct"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:backgroundTint="@color/first_color"
+            android:layout_width="38dp"
+            android:layout_height="38dp">
+        <ImageView
+            android:id="@+id/shoppingcartMainActs"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_shop_cart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:name="com.example.e_commerceandroidapp.Fragmant.RecentFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Toolbar"
+        app:layout_constraintVertical_bias="1.0"
+        app:navGraph="@navigation/nav_graph" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:itemIconTint="@drawable/select"
+        app:itemTextColor="@drawable/select"
+        app:labelVisibilityMode="labeled"
+        app:itemBackground="@drawable/bottom_navigation_ripple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
