@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DemoThemeMaterialComponent" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/black</item>
+
+        <!-- Defining that new color in ColorPrimaryDark -->
+        <item name="colorPrimaryDark">@color/first_color</item>
+        <item name="colorAccent">@color/black</item>
+    </style>
+
+
+    <style name="DemoThemeAppCompat" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+
+        <!-- Defining that new color in ColorPrimaryDark -->
+        <item name="colorPrimaryDark">#0D05F0</item>
+        <item name="android:navigationBarColor">#003C5190</item>
+        <item name="colorAccent">@color/white</item>
+
+    </style> <style name="MainActivityTheme.AppCompat" parent="Theme.AppCompat.DayNight.NoActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/white</item>
+
+    <!-- Defining that new color in ColorPrimaryDark -->
+    <item name="colorPrimaryDark">#0D05F0</item>
+
+    <item name="android:navigationBarColor">#003C5190</item>
+    <item name="colorAccent">@color/white</item>
+</style>
+
+
+
+    <style name="SplashScreenTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+
+        <!-- Defining that new color in ColorPrimaryDark -->
+        <item name="colorPrimaryDark">@color/accent_alpha26</item>
+        <item name="android:navigationBarColor">@color/accent_alpha26</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+
+    <style name="Theme.ECommerceAndroidApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:windowSplashScreenAnimationDuration">1000</item>
+
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

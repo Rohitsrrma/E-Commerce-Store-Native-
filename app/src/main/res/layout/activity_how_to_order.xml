@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activiity.HowToOrderActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/first_color"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <ImageView
+            android:id="@+id/backUserHTO"
+
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_backbutton"
+            app:tint="#ffffff" />
+
+
+        <TextView
+            android:id="@+id/textViewUserProfile"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How to Order"
+            android:textSize="20sp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/backUserHTO"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/Toolbar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="How To Shop At Solomerce Apps:"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+      <LinearLayout
+
+          android:layout_marginLeft="40dp"
+          android:layout_marginTop="20dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+        <View
+            android:layout_margin="10dp"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/circular_view"/>
+
+          <TextView
+
+              android:layout_marginRight="10dp"
+              android:textSize="19sp"
+              android:textColor="@color/black"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Shopping through the shopping cart, select the items that will be purchased in accordance with your wishes."/>
+      </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_margin="10dp"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/circular_view"/>
+
+        <TextView
+
+            android:layout_marginRight="10dp"
+            android:textSize="19sp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Continue by filling the form e-mail with details of the total price."/>
+    </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_margin="10dp"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/circular_view"/>
+
+            <TextView
+
+                android:layout_marginRight="10dp"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="After you place an order, we will immediately check the conditionsm the acailability (and prices if there are changes in the price), as well as the shipping of the product that yoou yourselves message, therefore DO NOT send/ transfer money before there is confirmation from is via phone/SMS or email."/>
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_margin="10dp"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/circular_view"/>
+
+            <TextView
+
+                android:layout_marginRight="10dp"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upon confirmation from us, please send/transfer payment to one of the following bank account"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <View
+                android:layout_margin="10dp"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/circular_view"/>
+            <TextView
+                android:layout_marginRight="10dp"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We only accept cash payments by wire transfer to a bank account"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

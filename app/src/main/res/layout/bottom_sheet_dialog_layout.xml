@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/first_color"
+        android:orientation="vertical"
+
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Order"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/bottom_sheet_datetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="28 Feb 2023, 05:43:56"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bottom_sheet_totalpricewithtax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="876 USD"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_marginTop="20dp"
+    android:orientation="horizontal"
+    android:layout_width="200dp"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="#88B1A9B9">
+
+
+
+
+        <TextView
+            android:id="@+id/purchase_Code_Text_View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+
+
+            android:text="V2B0ZB3QW"
+            android:textColor="@color/cash_green"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/copy_purchase_code_ImageView"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/purchase_Code_Text_View"
+            android:src="@drawable/ic_copy"
+            app:tint="@color/cash_green" />
+</LinearLayout>
+
+
+
+<TextView
+    android:id="@+id/order_summary_textView"
+    android:padding="20dp"
+    android:textColor="@color/textColor"
+    android:textSize="18sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="4 Gold Titanium Diamond Women's Bracelet 796 USD,\n\nOrder : 796 USD\nTax : 10 % : 80 USD\nTotal : 876 USDd\n\n"/>
+
+
+
+
+
+    </LinearLayout>
